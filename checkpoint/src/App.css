@@ -1,0 +1,127 @@
+#app{
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+#filter-section{
+    background-color:white ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 7px #333333;
+}
+#filter-section input[type='text']{
+    outline: none ;
+}
+button,input[type='reset']{
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#filter-section button,#filter-section input[type='reset']{
+    width: 100px;
+}
+button:hover,input[type='reset']:hover{
+    background-color: #50E3C2;
+}
+#filter-section select{
+    width: 150px;
+    border:none;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px;
+    border-radius: 3px;
+    color: #333333;
+    text-align: center;
+}
+#filter-config{
+    display: flex;
+    gap: 5px;
+}
+#filter-title{
+    color: #333333;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+label,legend{
+    font-size: larger;
+    font-weight: bolder;
+}
+#add-movie{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+
+}
+#add-movie input[type='text'] , #add-movie input[type='url'],textarea{
+    width: 300px;
+    height: 20px;
+    border-radius: 3px;
+    font-size: larger;
+    padding: 5px
+}
+textarea{
+    height: 40px;
+}
+#add-title{
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    
+}
+img{width: 200px;}
+.movie{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+.movie img {
+    width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.movie-title {
+    font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.movie p {
+    color: #4a4a4a;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+.movie-rating {
+    margin-top: 12px;
+  font-size: 1rem;
+  color: #facc15;
+  font-weight: 600;
+}
+#movie-list{
+    display: flex;
+    gap: 20px;
+}
