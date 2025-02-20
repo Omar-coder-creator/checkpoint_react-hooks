@@ -12,7 +12,6 @@ const Filter = () => {
             rating : rating.current.value
         }
         setFilter(filterObject)
-        console.log(filterObject)
     }
     return (
         <form action="" id='filter-section'>

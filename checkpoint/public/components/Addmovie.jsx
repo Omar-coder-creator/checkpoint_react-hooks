@@ -5,6 +5,7 @@ const Addmovie = () => {
     let description = useRef('')
     let posterurl = useRef('')
     let rating = useRef(0)
+    let trailerLink = useRef('')
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -12,7 +13,8 @@ const Addmovie = () => {
             title : title.current.value ,
             description : description.current.value,
             posterurl : posterurl.current.value,
-            rating : rating.current.value
+            rating : rating.current.value,
+            trailerLink :trailerLink.current.value
         }
         await addMovie(movie)
         window.location.reload()
@@ -27,6 +29,8 @@ const Addmovie = () => {
                 <textarea name="description" id="" ref={description}></textarea>
                 <label htmlFor="" ref={posterurl}>PosterUrl:</label>
                 <input type="url" name="posterurl" id="" ref={posterurl} />
+                <label htmlFor="">Trailer Url</label>
+                <input type="text" ref={trailerLink} />
                 <select name="" id="" ref={rating}>
                     <option value="">Rate</option>
                     <option value="1">1</option>

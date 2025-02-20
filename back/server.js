@@ -11,7 +11,8 @@ const movieSchema = new mongoose.Schema({
     rating: {
         type: Number,
         validate: (n) => { n >= 0 && n <= 5 }
-    }
+    },
+    trailerLink:String
 })
 const Movie = new mongoose.model('Movie', movieSchema)
 
